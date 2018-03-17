@@ -277,7 +277,7 @@ function MSCSFaceApi(key, server) {
         return new Promise((resolve, reject) => {
             axios({
                 method: "post",
-                url: `${DETECT}?returnFaceId=true`,
+                url: `${DETECT}?returnFaceId=true&returnFaceAttributes=true`,
                 headers: HEADERS,
                 data: {
                     "url": image
